@@ -1,0 +1,58 @@
+<!-- Write a JavaScript program to add items in an blank array and display the items using function. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11</title>
+</head>
+
+<body>
+    <h1>Add Items in an Array and Display them using Function</h1>
+
+    <script>
+        // declaring variables
+        n = 0;
+        arr = [];
+
+        // function to add items to array
+        function addToArray() {
+            arr[n] = document.getElementById("text1").value;
+            alert("Element: " + arr[n] + "  added at index " + n);
+            n++;
+            document.getElementById("text1").value = "";
+        }
+
+        // function to display items in array
+        function displayArray() {
+
+            // declaring variable to add a horizontal line and store the result
+            var e = "<hr/>";
+
+            // using loop to display each element in structured format
+            for (var y = 0; y < arr.length; y++) {
+                e += "Element " + y + " = " + arr[y] + "<br/>";
+            }
+
+            // adding the e variable to the div
+            document.getElementById("Result").innerHTML = e;
+        }
+    </script>
+
+    <!-- input area to enter elements -->
+    <input type="text" id="text1"></input>
+
+    <!-- button to add elements -->
+    <input type="button" id="button1" value="Add" onclick="addToArray();"></input>
+
+    <!-- button to display elements -->
+    <input type="button" id="button2" value="Display" onclick="displayArray();"></input>
+
+    <!-- div to display result -->
+    <div id="Result"></div>
+
+</body>
+
+</html>
