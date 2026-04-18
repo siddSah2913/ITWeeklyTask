@@ -1,0 +1,146 @@
+<!-- Task 1: Reproduce the following table using CSS positioning (relative or absolute) instead of <table>. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+
+    <style>
+        .container {
+            position: relative;
+            width: 563px;
+            height: 360px;
+            border: 2px solid #ffff0c;
+            padding: 10px;
+        }
+
+        .cell {
+            position: absolute;
+            border: 2px groove #FCFDD0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* headers */
+        .header {
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .col1 {
+            width: 200px;
+            left: 0px;
+            top: 0px;
+            border: 5px ridge #FCFDD0;
+        }
+
+        .col2 {
+            width: 190px;
+            left: 197px;
+            top: 0px;
+            border: 5px ridge #FCFDD0;
+        }
+
+        .col3 {
+            width: 200px;
+            left: 384px;
+            top: 0px;
+            border: 5px ridge #FCFDD0;
+        }
+
+        /* content blocks */
+        .bluebox {
+            width: 200px;
+            height: 332px;
+            left: 0px;
+            top: 47px;
+            background-color: #add8e6;
+            border: 5px ridge #FCFDD0;
+        }
+
+        .yellowbox {
+            width: 190px;
+            height: 55px;
+            left: 197px;
+            top: 47px;
+            background-color: yellow;
+            border: 5px ridge #FCFDD0;
+            /* Yellow */
+            text-align: right;
+        }
+
+        .redbox {
+            width: 200px;
+            height: 55px;
+            left: 384px;
+            top: 47px;
+            background-color: #ee3827;
+            border: 5px ridge #FCFDD0;
+            /* Red */
+            text-align: center;
+        }
+
+        .greenbox {
+            width: 387px;
+            height: 280px;
+            left: 197px;
+            top: 99px;
+            background-color: #3d7e2d;
+            border: 5px ridge #FCFDD0;
+            /* Dark Green */
+            color: black;
+        }
+
+        /* list styling */
+        ul,
+        ol {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- headers -->
+        <div class="cell header col1">Column 1</div>
+        <div class="cell header col2">Column 2</div>
+        <div class="cell header col3">Column 3</div>
+
+        <!-- blue box content -->
+        <div class="cell bluebox">
+            A numbered list:
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </div>
+
+        <!-- yellow box content -->
+        <div class="cell yellowbox">B</div>
+        <div class="cell redbox">C</div>
+
+        <!-- green box content -->
+        <div class="cell greenbox">
+            An unnumbered list:
+            <ul>
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
