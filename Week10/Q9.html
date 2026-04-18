@@ -1,0 +1,32 @@
+<!-- Write a JavaScript program to compute the sum and product of an array of integers -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+</head>
+
+<body>
+    <h1>Sum and Product of an Array of Integers</h1>
+    <script>
+        var array = [1, 2, 3, 4, 5, 6];
+
+        // declaring variables : sum and product
+        var sum = 0;
+        var product = 1;
+
+        // using for loop to add and multiply each element of the array
+        for (var i = 0; i < array.length; i++) {
+            sum += array[i];
+            product *= array[i];
+        }
+
+        // showing the result
+        alert("Array = [ " + array + " ]\nSum of array elements = " + sum + "\nProduct of array elements = " + product);
+    </script>
+</body>
+
+</html>

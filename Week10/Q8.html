@@ -1,0 +1,31 @@
+<!-- Write a simple JavaScript program to join all elements of the following array into a 
+string. Sample array : myColor = ["Red", "Green", "White", "Black"];  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+</head>
+
+<body>
+    <h1>Array Elements into a String</h1>
+    <script>
+        // given array
+        var myColor = ["Red", "Green", "White", "Black"];
+
+        // using toString() method
+        alert("Using toString() method: " + myColor.toString());
+
+        // using join() method
+        alert("Using join() method: " + myColor.join());
+
+        // using join() method with "+" separator
+        alert("Using join() method with " + "+" + " separator: " + myColor.join("+"));
+
+    </script>
+</body>
+
+</html>
